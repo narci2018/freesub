@@ -19,26 +19,26 @@ proxies:
     headers:
       Host: my.kempekl.online
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: vless
-  server: 185.86.145.183
-  port: 443
-  uuid: 7ec9f26a-edec-4bf1-addd-700626df27c1
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: cosmo-pulse.ru
-  network: ws
-  ws-opts:
-    path: /nl7ws
-    headers:
-      Host: cosmo-pulse.ru
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: ss
   server: 130.49.189.158
   port: 43558
   cipher: chacha20-ietf-poly1305
   password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
   udp: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  type: vless
+  server: 194.226.121.119
+  port: 443
+  uuid: ec6f8131-7a5d-4117-9627-6fb2b39ae0da
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: drive.korroh.com
+  network: ws
+  ws-opts:
+    path: /remote.php/dav/89f7661a0011ce46
+    headers:
+      Host: drive.korroh.com
 proxy-groups:
 - name: PROXIES
   type: select
